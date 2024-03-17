@@ -17,13 +17,13 @@ public class Program
             throw new ArgumentException("Tablica nie może być pusta.");
         }
 
-        int suma = 0;
+        int sumaTablicy = 0;
         foreach (int liczba in liczby)
         {
-            suma += liczba;
+            sumaTablicy += liczba;
         }
 
-        double srednia = (double)suma / liczby.Length;
+        double srednia = (double)sumaTablicy / liczby.Length;
         return srednia;
     }
 
