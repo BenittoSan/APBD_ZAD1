@@ -27,6 +27,25 @@ public class Program
         return srednia;
     }
 
+    public static int ObliczMax(int[] liczby)
+    {
+        if (liczby == null || liczby.Length == 0)
+        {
+            throw new ArgumentException("Tablica nie może być pusta.");
+        }
+
+        int max = liczby[0];
+        foreach (var value in liczby)
+        {
+            if (value > max)
+            {
+                max = value;
+            }
+        }
+
+        return max;
+    }
+
     public static void Main()
     {
         int[] mojeLiczby = { 1, 2, 3, 4, 5 };
