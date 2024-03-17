@@ -17,6 +17,7 @@ public class Program
             throw new ArgumentException("Tablica nie może być pusta.");
         }
 
+
         int sumaTablicy = 0;
         foreach (int liczba in liczby)
         {
@@ -24,6 +25,10 @@ public class Program
         }
 
         double srednia = (double)sumaTablicy / liczby.Length;
+
+        
+
+
         return srednia;
     }
 
